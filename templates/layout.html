@@ -2,9 +2,18 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>{%block title%}{%endblock%}</title>
+    <title>{% block title %}{% endblock %}</title>
   </head>
   <body>
-    {%block body%}{%endblock%}
+    <ul>
+      <a href="{{url_for('index')}}"><li>Home</li></a>
+      <a href="{{url_for('cont')}}"><li>Contact</li></a>
+      <a href="{{url_for('blog')}}"><li>about</li></a>
+      <a href="{{url_for('about')}}"><li>blog</li></a>
+      
+    </ul>
+
+    {% block body %}
+    {% endblock %}
   </body>
 </html>
