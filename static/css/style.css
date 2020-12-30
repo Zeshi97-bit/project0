@@ -1,0 +1,13 @@
+a {
+  text-decoration:none;
+  float:left;
+  display:block;
+  border:1px solid black;
+  padding:20px;
+  margin:5px;
+  list-style-type:none;
+}
+a:hover{
+  color:white;
+  background-color:black;
+}
