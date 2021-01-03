@@ -1,5 +1,25 @@
 {%extends "layout.html"%}
+{%block head%}
+      <link rel="stylesheet" href="{{url_for('static',filename='css/blogStyle.css')}}">
+      {%endblock%}
 {%block title%}blog{%endblock%}
 {%block body%}
-  <h1>This is blog side</h1>
+<div id="mainBody">
+  <div id="leftBar">
+      <h1>this is leftBar</h1>
+  </div>
+  <div id="mainContent">
+      <h1>this is main document and we are ready to go with this</h1>
+      <h1>this is main document and we are ready to go with this</h1>
+  </div>
+
+
+  <div id="rightBar">
+      <h1>this is rightbar</h1>
+  </div>
+
+</div>
+<div class="col">
+  <h1>this is footer</h1>
+</div>
 {%endblock%}
