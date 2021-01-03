@@ -1,0 +1,22 @@
+#form_div{
+  margin-top: 125px;
+  display: block;
+  margin-left: 455px;
+  margin-bottom: 50px;
+
+}
+#form_div form{
+  float:left;
+  border:1px solid black;
+  padding: 100px 50px;
+}
+#form_div form input{
+  margin: 20px 10px;
+  text-align: center;
+
+}
+#form_div form button{
+  margin-left: 70px;
+  margin-top:50px;
+  border-radius: 4px;
+}
