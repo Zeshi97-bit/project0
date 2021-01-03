@@ -1,13 +1,35 @@
-a {
-  text-decoration:none;
-  float:left;
-  display:block;
-  border:1px solid black;
-  padding:20px;
-  margin:5px;
-  list-style-type:none;
+/*ul{
+  float:right;
 }
+
+
 a:hover{
   color:white;
   background-color:black;
+}
+a {
+  text-decoration:none;
+  float:left;
+  border:1px solid black;
+  padding: 7px 20px;
+  margin:0px 5px;
+  list-style-type:none;
+}
+*/
+.main-container{
+  padding-top: 50px;
+}
+.index-intro{
+  width:100%;
+  background-color: #f3f3f3;
+}
+.index-intro .jumbotron{
+  padding:100px 60px;
+  margin:0px;
+  background-image: url('banner2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.index-intro .jumbotron h1{
+  font-size: 50px;
 }
