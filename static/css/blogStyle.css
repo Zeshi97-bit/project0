@@ -1,0 +1,30 @@
+#mainBody{
+  margin-top: 50px;
+
+}
+
+#leftBar{
+  /*display: block;*/
+  float:left;
+  /*width:100px;*/
+  border:1px solid black;
+  margin-right: 7px;
+  margin-top:6px;
+  padding:3px;
+}
+#mainContent{
+  /*display: block;*/
+  /*width:200px;*/
+  border: 1px solid black;
+  margin-right: 7px;
+  float:left;
+  width: 588px;
+  padding:3px;
+}
+#rightBar{
+  /*display: block;*/
+  float:right;
+  /*width:100px*/
+  border:1px solid black;
+  padding:3px;
+}
