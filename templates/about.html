@@ -1,5 +1,36 @@
 {%extends "layout.html"%}
 {%block title%}About{%endblock%}
+{%block head%}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/aboutstyle.css')}}">
+    {%endblock%}
 {%block body%}
-  <h1>This is about side</h1>
+
+<div class="container">
+  <section class="bodyContent">
+      <div class="row firstrow">
+        <div class="col-sm-4 images1">
+          <img class="image image-responsive" src="{{url_for('static',filename='images/car.jpg')}}" alt="webinar" height="300px" width="100%">
+        </div>
+        <div class="col-sm-8 details">
+            <h1>This is info about this</h1>
+        </div>
+      </div>
+      <div class="row firstrow  details">
+        <div class="col-sm-8 ">
+          <h1>This is info about this</h1>
+        </div>
+        <div class="col-sm-4 images1">
+            <img class="image image-responsive" src="{{url_for('static',filename='images/car.jpg')}}" alt="webinar" height="300px" width="100%">
+        </div>
+      </div>
+      <div class="row firstrow">
+        <div class="col-sm-4 images1">
+          <img class="image image-responsive" src="{{url_for('static',filename='images/car.jpg')}}" alt="webinar" height="300px" width="100%">
+        </div>
+        <div class="col-sm-8 details">
+            <h1>This is info about this</h1>
+        </div>
+      </div>
+    </section>
+</div>
 {%endblock%}
