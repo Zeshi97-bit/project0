@@ -1,5 +1,69 @@
 {%extends "layout.html"%}
+
+{% block head %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/stylehome.css') }}">
+
+      {% endblock %}
 {%block title%}Home{%endblock%}
 {%block body%}
-  <h1>zeshan ahmad shah this is home</h1>
+<div class="container" id="below_line">
+  <div class="row">
+    <div class="col-sm-3 content1-left">This is the left side </div>
+    <div class="col-sm-6 content1-centre">This is centre </div>
+    <div class="col-sm-3 content1-right">This is right </div>
+
+  </div>
+<!--
+    <div class="col">
+        Line bellow buttons
+    </div>
+</div>
+
+
+<div class="container">
+  <div class="row align-items-start">
+    <div class="col">
+      <img src="{{url_for('static',filename='images/car.jpg')}}" alt="car image" height="50px" width="150px">
+      <p>This car belong to me</p>
+    </div>
+    <div class="col">
+      <img src="{{url_for('static',filename='images/car.jpg')}}" alt="car image" height="50px" width="150px">
+      <p>This car belong to me</p>
+    </div>
+    <div class="col">
+      <img src="{{url_for('static',filename='images/car.jpg')}}" alt="car image" height="50px" width="150px">
+      <p>This car belong to me</p>
+    </div>
+  </div>
+  <div class="row align-items-start">
+    <div class="col">
+      <img src="{{url_for('static',filename='images/car.jpg')}}" alt="car image" height="50px" width="150px">
+      <p>This car belong to me</p>
+    </div>
+    <div class="col">
+      <img src="{{url_for('static',filename='images/car.jpg')}}" alt="car image" height="50px" width="150px">
+      <p>This car belong to me</p>
+    </div>
+    <div class="col">
+      <img src="{{url_for('static',filename='images/car.jpg')}}" alt="car image" height="50px" width="150px">
+      <p>This car belong to me</p>
+    </div>
+  </div>
+  <div class="row align-items-start">
+    <div class="col">
+      <img src="{{url_for('static',filename='images/car.jpg')}}" alt="car image" height="50px" width="150px">
+      <p>This car belong to me</p>
+    </div>
+    <div class="col">
+      <img src="{{url_for('static',filename='images/car.jpg')}}" alt="car image" height="50px" width="150px">
+      <p>This car belong to me</p>
+    </div>
+    <div class="col">
+      <img src="{{url_for('static',filename='images/car.jpg')}}" alt="car image" height="50px" width="150px">
+      <p>This car belong to me</p>
+    </div>
+  </div>
+-->
+  </div>
+
 {%endblock%}
