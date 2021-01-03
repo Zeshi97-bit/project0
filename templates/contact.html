@@ -1,5 +1,60 @@
 {%extends "layout.html"%}
+{%block head%}
+  <link rel="stylesheet" href="{{url_for('static',filename='css/contactStyle.css')}}">
+{%endblock%}
 {%block title%}Contact{%endblock%}
 {%block body%}
-  <h1>This is contact side</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <form  action="{{url_for('book')}}"  method="post">
+          <div class="form-group">
+            <label>Name:</label>
+            <input type="text" class="form-control" name="name">
+          </div>
+          <div class="form-group">
+            <label>Email:</label>
+            <input type="text" class="form-control" name="email">
+          </div>
+          <div class="form-group">
+            <label>Massage:</label>
+            <textarea class="form-control" rows="5" name="message"></textarea>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary">send</button>
+          </div>
+        </form>
+      </div>
+
+    <div class="col-sm-4 personalInfo">
+      <section class="information">
+        <div class="row">
+          <div class="col-sm-12">
+              <h1>Address:</h1>
+              <hr>
+              <address class="">Room #14 Noorani Hostel Firdous Market Gulberg 3 Lahore</address>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+              <h1>Phone number:</h1>
+              <hr>
+              <p>Phone# +923400512048</p>
+              <p>WhatsApp# 03429436517</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+              <h1>Email address:</h1>
+              <hr>
+              <p>Email: Zeshishah97@gmail.com</p>
+          </div>
+        </div>
+        </section>
+    </div>
+
+
+    </div>
+
+  </div>
 {%endblock%}
