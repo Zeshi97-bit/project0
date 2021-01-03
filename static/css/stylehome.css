@@ -1,0 +1,27 @@
+#home h1{
+  color:blue;
+  font-size: 50px;
+}
+#below_line{
+    margin-top: 30px;
+
+    border: 1px solid black;
+  /*  background-color: gray;*/
+    /* margin: 39px; */
+    margin-bottom: 30px;}
+
+
+
+.content1-left{
+  background-color: red;
+  height:500px;
+
+}
+.content1-centre{
+  background-color: blue;
+  height:500px;
+}
+.content1-right{
+  background-color: green;
+  height:500px;
+}
