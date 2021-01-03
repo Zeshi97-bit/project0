@@ -1,0 +1,16 @@
+{%extends "layout.html"%}
+
+    {% block head %}
+            <link rel="stylesheet" href="{{ url_for('static', filename='css/signin.css') }}">
+
+          {% endblock %}
+{%block body%}
+  <div id="form_div">
+    <form class="" action="" method="post">
+      <input type="emial" name="email" value="" placeholder="Enter your email"><br>
+      <input type="password" name="pass" value="" placeholder="Enter your password"><br>
+      <button  type="button" name="button">SignIn</button>
+    </form>
+  </div>
+
+{%endblock%}
