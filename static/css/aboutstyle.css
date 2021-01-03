@@ -1,0 +1,21 @@
+.bodyContent{
+  margin-top: 50px;
+  width:100%
+}
+.firstrow{
+  margin: 10px 0px;
+}
+
+.images1{
+  background-color: #f3f3f3;
+  height: 300px;
+  padding:0px;
+
+}
+.details{
+  background-color: #f3f3f3;
+  height: 300px;
+}
+.firstrow .images1{
+  padding:0px;
+}
