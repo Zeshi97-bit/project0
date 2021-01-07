@@ -5,12 +5,29 @@
 
           {% endblock %}
 {%block body%}
-  <div id="form_div">
-    <form class="" action="" method="post">
-      <input type="emial" name="email" value="" placeholder="Enter your email"><br>
-      <input type="password" name="pass" value="" placeholder="Enter your password"><br>
-      <button  type="button" name="button">SignIn</button>
-    </form>
+<div class="container">
+  <div class="myCard">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="myLeftCtn">
+          <form  class="myForm text-center" action="{{url_for('signin1')}}" method="post">
+            <header>SignIn to your account </header>
+            <div class="form-group">
+              <i class="fas fa-envelope"></i>
+              <input class="myInput" type="email" placeholder="Enter email" id="username" name="email" required>
+            </div>
+            <div class="form-group">
+              <i class="fas fa-lock"></i>
+              <input class="myInput" type="password" placeholder="password" id="username" name="password" required>
+            </div>
+            <div class="form-group">
+              <input type="submit" class="butt" value="SignIn">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
 
 {%endblock%}
