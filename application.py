@@ -42,5 +42,31 @@ def book():
     db.commit()
     return render_template("success.html", username=name)
 
-if __name__=="__main__":
-    main()
+@app.route("/register", methods=["POST"])
+def register():
+    name = request.form.get("name")
+    email = request.form.get("email")
+    password = request.form.get("password")
+    db.execute("INSERT INTO friend.signup(name, email, password) VALUES (:name, :email, :password)",
+                {"name": name, "email": email, "password": password})
+    db.commit()
+    return render_template("success.html", username=name)
+
+@app.route("/signin", methods=["POST","GET"])
+def signin1():
+    if request.method=='POST':
+        if 'email' in request.form and 'password' in request.form:
+            email = request.form.get("email")
+            password = request.form.get("password")
+            username=db.execute("SELECT * FROM friend.signup WHERE email=:email",{"email": email}).fetchone()
+            passworddata=db.execute("SELECT * FROM friend.signup WHERE password=:password",{"password": password}).fetchone()
+            if username and passworddata is None:
+
+                return render_template("signin.html")
+            else:
+                return render_template("success.html")
+
+
+if __name__ == '__main__':
+    app.debug = True
+    app.run()
